@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Depository</title>
-    </head>
-    <body>
+<?php include("header.php") ?>
 
-    <a href="index.php">Home</a> |
-    <a href="depository.php">Depository</a> |
-    <a href="close.php">Close</a>
-        
+    <h1>Basic depository</h1>
     </body>
 </html>
