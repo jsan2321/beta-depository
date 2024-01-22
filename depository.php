@@ -1,4 +1,5 @@
 <?php include("header.php") ?>
-        
-    </body>
-</html>
+
+    <h1>Basic depository</h1>
+
+<?php include("footer.php") ?>
