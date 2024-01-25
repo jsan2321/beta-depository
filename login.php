@@ -1,8 +1,14 @@
-<?php
-
+<?php 
+  // this is a basic authentication
+  session_start(); // initialize session variables...
+  // ... which are automatically destroyed after server shutdown
+  
   if($_POST) {
     if(($_POST['user']=="mints") && ($_POST['password']=="12345")) { 
-      header("location:index.php");
+      $_SESSION['user']="mints";
+      header("location:index.php"); 
+      //$_SESSION['login']=true;
+
     } else {
       echo "<script> alert('Incorrect username or password') </script>";
     }

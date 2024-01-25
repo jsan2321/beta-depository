@@ -1,3 +1,11 @@
+<?php
+session_start(); // basic authentication 
+//print_r($_SESSION); // prints array of session variable and its value, after initialisation
+if (isset($_SESSION['user'])!="mints") {
+    header("location:login.php"); // redirects to login.php if session variable is not correct
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
