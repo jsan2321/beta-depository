@@ -17,9 +17,15 @@
 
         }
 
-        public function execute($sql){
+        public function execute($sql){ // insert/delete/update data from database
             $this->connection->exec($sql);
             return $this->connection->lastInsertId();
+        }
+
+        public function query($sql) { // function to retrieve all registers
+            $statement=$this->connection->prepare($sql);
+            $statement->execute();
+            return $statement->fetchAll();
         }
 
     }
